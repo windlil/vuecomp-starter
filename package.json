@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "play": "pnpm run "
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",

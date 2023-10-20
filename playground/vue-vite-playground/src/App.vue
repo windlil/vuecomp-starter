@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { WButton } from '@windlil-design/components'
+
 </script>
 
 <template>
   <div>
-    <WButton />
+    <wd-button />
   </div>
 </template>
 
