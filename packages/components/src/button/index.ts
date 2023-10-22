@@ -1,5 +1,5 @@
 import Button from './src/button.vue'
-import { withInstall } from '@windlil-design/utils'
+import { withInstall } from '../../../utils/withInstall'
 
 const WdButton = withInstall(Button)
 

@@ -5,7 +5,7 @@ defineOptions({
 </script>
 
 <template>
-  <button>
+  <button class="wd-button">
     测试按钮
   </button>
 </template>

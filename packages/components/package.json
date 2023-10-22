@@ -1,17 +1,12 @@
 {
   "name": "@windlil-design/components",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.ts",
+  "type": "module",
   "scripts": {
     "build": "vite build"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
-    "@windlil-design/utils": "workspace:^",
     "vite": "^4.5.0",
     "vite-plugin-dts": "^3.6.0"
   }

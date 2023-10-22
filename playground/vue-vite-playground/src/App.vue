@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { WdButton } from 'wind-design'
 </script>
 
 <template>
@@ -7,7 +7,3 @@
     <wd-button />
   </div>
 </template>
-
-<style scoped lang="scss">
-
-</style>

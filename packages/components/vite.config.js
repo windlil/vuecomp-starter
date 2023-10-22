@@ -9,35 +9,37 @@ export default defineConfig({
     emptyOutDir: false,
     minify: false,
     rollupOptions: {
-      external: [
-        'vue',
-        '@yanyu-fe/utils',
-      ],
-      input: ['./index.ts'],
+      external: ['vue'],
+      input: ['./src/index.ts'],
       output: [
         {
+          exports: 'named',
           format: 'es',
-          dir: 'es',
+          dir: '../../dist/es',
           entryFileNames: '[name].js',
           preserveModules: true,
           preserveModulesRoot: 'src',
         },
         {
+          exports: 'named',
           format: 'cjs',
-          dir: 'lib',
+          dir: '../../dist/lib',
           entryFileNames: '[name].js',
           preserveModules: true,
           preserveModulesRoot: 'src',
-        },
-      ],
+        }
+      ]
     },
     lib: {
       entry: 'src/index.ts',
-      formats: ['es', 'cjs'],
+      formats: ['es', 'cjs']
     },
   },
   plugins: [
     vue(),
-    dts(),
-  ],
+    dts({
+      entryRoot: './src',
+      outDir: '../../dist/es'
+    })
+  ]
 })
