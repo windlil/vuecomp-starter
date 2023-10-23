@@ -2,6 +2,7 @@
   "name": "wind-design",
   "version": "0.0.1",
   "description": "",
+  "type": "module",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
   "types": "dist/lib/index.d.ts",
@@ -11,7 +12,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "build:design": "gulp -f packages/script/build/index.ts"
+    "build:design": "gulp -f packages/script/build/index.ts",
+    "create:component": "node ./utils/createComponent/index.js"
   },
   "files": [
     "dist"
@@ -24,9 +26,11 @@
     "@types/gulp-autoprefixer": "^0.0.36",
     "@types/gulp-sass": "^5.0.3",
     "@types/node": "^20.8.7",
+    "dotenv": "^16.3.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
+    "less": "^4.2.0",
     "sass": "^1.69.4",
     "sucrase": "^3.34.0",
     "typescript": "^5.2.2",
