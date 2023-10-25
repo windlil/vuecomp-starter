@@ -1,9 +1,20 @@
 <script setup lang="ts">
-import { WdButton } from 'wind-design'
+import Show from './component/show/index.vue'
 </script>
 
 <template>
-  <div>
-    <wd-button />
+  <div class="app">
+    <Show />
   </div>
 </template>
+
+<style scoped lang="scss">
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+}
+</style>
