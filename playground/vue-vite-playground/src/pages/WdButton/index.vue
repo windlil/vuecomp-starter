@@ -1,12 +1,13 @@
 <script setup lang="ts">
-defineOptions({
-  name: 'WdAvatar'
-})
+
 </script>
-  
+
 <template>
   <div>
-     WdAvatar
+    test
   </div>
 </template>
-  
+
+<style scoped lang="scss">
+
+</style>

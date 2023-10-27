@@ -1,2 +1,2 @@
 
-export * from './avatar/index';
+export * from './button/index';

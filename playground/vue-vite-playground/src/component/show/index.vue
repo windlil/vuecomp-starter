@@ -1,5 +1,8 @@
 <script setup lang="ts">
+import Menu from '../menu/index.vue'
+import { routes } from '../../router/index'
 
+console.log(routes)
 </script>
 
 <template>
@@ -7,17 +10,23 @@
     <div class="top">
  
     </div>
-    <div class="main">
-      
+    <div class="center">
+      <Menu :menu="routes" />
+      <div class="main">
+        <RouterView />
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .show {
-  width: 80%;
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
   border-radius: 15px;
+  background-color: #dfdfdf;
 
   .top {
     width: 100%;
@@ -25,6 +34,9 @@
     background-color: #303030;
   }
 
-  background-color: #dfdfdf;
+  .center {
+    display: flex;
+    height: 100%;
+  }
 }
 </style>

@@ -9,7 +9,7 @@ export default defineConfig({
     emptyOutDir: false,
     minify: false,
     rollupOptions: {
-      external: ['vue'],
+      external: ['vue', /\.less/,  /\.scss/],
       input: ['./src/index.ts'],
       output: [
         {

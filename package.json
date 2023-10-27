@@ -11,8 +11,7 @@
     "./styles/*.css": "./dist/styles/*.css"
   },
   "scripts": {
-    "build": "vite build",
-    "build:design": "gulp -f packages/script/build/index.ts",
+    "build": "gulp -f packages/script/build/index.ts",
     "create:component": "node ./utils/createComponent/index.js"
   },
   "files": [
@@ -24,11 +23,13 @@
   "devDependencies": {
     "@types/gulp": "^4.0.16",
     "@types/gulp-autoprefixer": "^0.0.36",
+    "@types/gulp-less": "^0.0.35",
     "@types/gulp-sass": "^5.0.3",
     "@types/node": "^20.8.7",
     "dotenv": "^16.3.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
+    "gulp-less": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "less": "^4.2.0",
     "sass": "^1.69.4",

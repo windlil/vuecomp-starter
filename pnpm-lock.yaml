@@ -14,6 +14,9 @@ importers:
       '@types/gulp-autoprefixer':
         specifier: ^0.0.36
         version: 0.0.36
+      '@types/gulp-less':
+        specifier: ^0.0.35
+        version: 0.0.35
       '@types/gulp-sass':
         specifier: ^5.0.3
         version: 5.0.3
@@ -29,6 +32,9 @@ importers:
       gulp-autoprefixer:
         specifier: ^8.0.0
         version: 8.0.0(gulp@4.0.2)
+      gulp-less:
+        specifier: ^5.0.0
+        version: 5.0.0
       gulp-sass:
         specifier: ^5.1.0
         version: 5.1.0
@@ -70,6 +76,9 @@ importers:
       vue:
         specifier: ^3.3.4
         version: 3.3.4
+      vue-router:
+        specifier: ^4.2.5
+        version: 4.2.5(vue@3.3.4)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.2.3
@@ -456,6 +465,12 @@ packages:
       '@types/node': 20.8.7
     dev: true
 
+  /@types/gulp-less@0.0.35:
+    resolution: {integrity: sha512-7D5WQ4pJQyUdTqky1DLIhRQBEoPYAgsQeKcYWPNUAYnuoFKYwbGIuJiDh4hG/Y0LGpXugaQYEfa1lX4fSOqv3g==}
+    dependencies:
+      '@types/node': 20.8.7
+    dev: true
+
   /@types/gulp-sass@5.0.3:
     resolution: {integrity: sha512-vYpPfcPGe5PV686UNVhiwS1FAM1RRGayN6evx23Zd+4rnpzMYypgfuOY7Z51Jt2NPzvvCu82Vqd/Q0Rxr1EGew==}
     dependencies:
@@ -528,7 +543,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.5.0(@types/node@20.8.7)(less@4.2.0)(sass@1.69.4)
+      vite: 4.5.0
       vue: 3.3.4
     dev: true
 
@@ -583,6 +598,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.3.4
       '@vue/shared': 3.3.4
+
+  /@vue/devtools-api@6.5.1:
+    resolution: {integrity: sha512-+KpckaAQyfbvshdDW5xQylLni1asvNSGme1JFs8I1+/H5pHEhqUKMEQD/qn3Nx5+/nycBq11qAEi8lk+LXI2dA==}
+    dev: false
 
   /@vue/language-core@1.8.19(typescript@5.2.2):
     resolution: {integrity: sha512-nt3dodGs97UM6fnxeQBazO50yYCKBK53waFWB3qMbLmR6eL3aUryZgQtZoBe1pye17Wl8fs9HysV3si6xMgndQ==}
@@ -1775,6 +1794,20 @@ packages:
       semver-greatest-satisfied-range: 1.1.0
       v8flags: 3.2.0
       yargs: 7.1.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /gulp-less@5.0.0:
+    resolution: {integrity: sha512-W2I3TewO/By6UZsM/wJG3pyK5M6J0NYmJAAhwYXQHR+38S0iDtZasmUgFCH3CQj+pQYw/PAIzxvFvwtEXz1HhQ==}
+    engines: {node: '>=6'}
+    dependencies:
+      less: 4.2.0
+      object-assign: 4.1.1
+      plugin-error: 1.0.1
+      replace-ext: 2.0.0
+      through2: 4.0.2
+      vinyl-sourcemaps-apply: 0.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3597,6 +3630,15 @@ packages:
     optionalDependencies:
       fsevents: 2.3.3
     dev: true
+
+  /vue-router@4.2.5(vue@3.3.4):
+    resolution: {integrity: sha512-DIUpKcyg4+PTQKfFPX88UWhlagBEBEfJ5A8XDXRJLUnZOvcpMF8o/dnL90vpVkGaPbjvXazV/rC1qBKrZlFugw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.5.1
+      vue: 3.3.4
+    dev: false
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}

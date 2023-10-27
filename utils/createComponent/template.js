@@ -1,8 +1,9 @@
 export function createIndexTemplate(compName) {
+  const originName = compName
   compName = compName[0].toUpperCase() + compName.slice(1)
   const COMPONENT_NAME = process.env.COMPONENT_NAME ?? ''
   const name = `${COMPONENT_NAME}${compName}`
-  return `import component from './src/${compName}.vue'
+  return `import component from './src/${originName}.vue'
 import { withInstall } from '../../../utils/withInstall'
   
 const ${name} = withInstall(component)
