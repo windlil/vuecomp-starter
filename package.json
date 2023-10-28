@@ -15,7 +15,7 @@
     "docs:dev": "",
     "comp:create": "node ./utils/createComponent/index.js",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
-    "comp:page": "node ./utils/createTestVue/index.js"
+    "comp:new": "node ./utils/createTestVue/index.js"
   },
   "files": [
     "dist"
