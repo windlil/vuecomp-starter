@@ -13,6 +13,7 @@
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
     "docs:dev": "",
+    "component:create": "node ./utils/create/index.js",
     "comp:create": "node ./utils/createComponent/index.js",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
     "comp:new": "node ./utils/createTestVue/index.js"

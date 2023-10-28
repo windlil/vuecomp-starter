@@ -1,6 +1,6 @@
 import chalk from 'chalk'
-import { createComponent } from '../createComponent/create'
-import { createPage } from '../createTestVue/createPage'
+import { createComponent } from '../createComponent/create.js'
+import { createPage } from '../createTestVue/createPage.js'
 
 const componentsPath = './packages/components/src'
 
