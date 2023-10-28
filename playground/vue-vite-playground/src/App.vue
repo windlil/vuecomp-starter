@@ -15,6 +15,5 @@ import Show from './component/show/index.vue'
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: #222222;
 }
 </style>

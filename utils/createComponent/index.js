@@ -2,10 +2,15 @@ import { createComponent } from './create.js'
 
 const componentsPath = './packages/components/src'
 
-createComponent(componentsPath, 'button')
-
-function findComponentList() {
-  
+function create() {
+  const commands = process.argv.splice(2)
+  if (commands.length === 0) {
+    console.log('缺少必要参数')
+    return
+  }
+  for (const item of commands) {
+    createComponent(componentsPath, item)
+  }
 }
 
-findComponentList()
+create()

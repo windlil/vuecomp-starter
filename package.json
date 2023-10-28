@@ -12,7 +12,10 @@
   },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
-    "create:component": "node ./utils/createComponent/index.js"
+    "docs:dev": "",
+    "comp:create": "node ./utils/createComponent/index.js",
+    "comp:play": "pnpm run -C playground/vue-vite-playground dev",
+    "comp:page": "node ./utils/createTestVue/index.js"
   },
   "files": [
     "dist"
@@ -26,6 +29,7 @@
     "@types/gulp-less": "^0.0.35",
     "@types/gulp-sass": "^5.0.3",
     "@types/node": "^20.8.7",
+    "chalk": "^5.3.0",
     "dotenv": "^16.3.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",

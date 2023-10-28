@@ -8,7 +8,9 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "lib": ["DOM", "ESNext"]
+    "lib": ["DOM", "ESNext"],
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "exclude": [
     "dist", "node_modules"
