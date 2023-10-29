@@ -1,24 +1,21 @@
 ---
 layout: home
-title: easy-design-template
-titleTemplate: components template
+title: vuecomp-starter
+titleTemplate: 组件库开发起始模板
 
 hero:
-  name: easy-design
+  name: vuecomp-starter
   text: 组件库开发解决方案
   tagline: Vue3 + Vite + ts + sass / less
-  image:
-
-    alt: Vue Amazing UI
   actions:
     - theme: brand
       text: Get Started
       link: /guide/features
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/themusecatcher/vue-amazing-ui
+      text: GitHub
+      link: https://github.com/windlil/vuecomp-starter
     - theme: alt
-      text: View on NPM
-      link: https://www.npmjs.com/package/vue-amazing-ui
+      text: NPM
+      link: https://github.com/windlil/vuecomp-starter
 ---
 
