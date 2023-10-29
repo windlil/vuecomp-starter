@@ -12,11 +12,12 @@
   },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
-    "docs:dev": "",
     "component:create": "node ./utils/create/index.js",
     "comp:create": "node ./utils/createComponent/index.js",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
-    "comp:new": "node ./utils/createTestVue/index.js"
+    "comp:new": "node ./utils/createTestVue/index.js",
+    "docs:dev": "vitepress dev docs --port 8000 --open",
+    "docs:build": "vitepress build docs"
   },
   "files": [
     "dist"
@@ -40,6 +41,8 @@
     "sass": "^1.69.4",
     "sucrase": "^3.34.0",
     "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vitepress": "1.0.0-rc.24",
     "vue": "^3.3.4"
   }
 }
