@@ -1,5 +1,4 @@
 import fs from 'node:fs'
-import chalk from 'chalk'
 import '../../config/env.js'
 
 
@@ -35,7 +34,7 @@ export function createPage(commands) {
       if (!err) {
         fs.writeFile(target, template, (err) => {
           if (!err) {
-            console.log(chalk.green('新测试组件生成完成，位置:', target))
+            console.log('新测试组件生成完成，位置:', target)
           } else {
             console.log('新测试组件生成错误', err)
           }

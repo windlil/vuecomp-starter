@@ -34,7 +34,7 @@ export function createComponent(componentsPath, compName) {
   })
 }
 
-async function createFile(dir, template) {
+function createFile(dir, template) {
   fs.writeFile(dir, template, (err) => {
     if (!err) {
       console.log(`${dir}文件创建成功`)
@@ -44,7 +44,7 @@ async function createFile(dir, template) {
   })
 }
 
-function componentExist(compRoot) {
+export function componentExist(compRoot) {
   if (fs.existsSync(compRoot)) {
     return false
   } else {
