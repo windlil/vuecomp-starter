@@ -1,7 +1,9 @@
 {
-  "name": "wind-design",
+  "name": "vuecomp-starter",
   "version": "0.0.1",
-  "description": "",
+  "author": "windlil<windlil@outlook.com>",
+  "description": "开源的组件库开发起始模板，帮助以最轻松的方式搭建功能完善的Vue3组件库，让使用者只需关注到组件的开发，无需关注繁琐的搭建配置。",
+  "keywords": ["components", "Vue3", "ui"],
   "type": "module",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
@@ -22,8 +24,6 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/gulp": "^4.0.16",
