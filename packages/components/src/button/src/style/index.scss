@@ -1,7 +1,28 @@
-.test {
-  background-color: pink;
+.ea-button {
+  padding: 8px 25px;
+  outline: none;
+  border: 1px solid #c3c3c3;
+  border-radius: 6px;
+  background-color: transparent;
+  cursor: pointer;
 
-  .a {
-    font-size: 16px;
+  &--primary {
+    color: #fff;
+    background-color: #409eff;
+  }
+
+  &--success {
+    color: #fff;
+    background-color: #67c23a;
+  }
+
+  &--danger {
+    color: #fff;
+    background-color: #f89898;
+  }
+
+  &--warning {
+    color: #fff;
+    background-color: #e6a23c;
   }
 }

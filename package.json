@@ -18,7 +18,8 @@
     "comp:create": "node ./utils/createComponent/index.js",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
     "comp:new": "node ./utils/createTestVue/index.js",
-    "docs:dev": "vitepress dev docs --port 8000 --open",
+    "docs:dev": "vitepress dev docs --port 8000",
+    "docs:new": "node ./utils/createVitepressComp/index.js",
     "docs:build": "vitepress build docs"
   },
   "files": [

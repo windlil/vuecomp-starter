@@ -1,1 +1,7 @@
 @import url('./reset.scss');
+
+.group {
+  >:nth-child(n) {
+    margin: 0 5px;
+  }
+}

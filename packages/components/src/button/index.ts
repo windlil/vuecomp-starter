@@ -1,10 +1,10 @@
 import component from './src/button.vue'
 import { withInstall } from '../../../utils/withInstall'
   
-const WdButton = withInstall(component)
+const VcButton = withInstall(component)
   
 export {
-  WdButton
+  VcButton
 }
   
-export default WdButton
+export default VcButton
