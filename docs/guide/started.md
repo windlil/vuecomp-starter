@@ -1,5 +1,7 @@
 # 快速上手
 
+> ⚠ 建议在初次开发的时候详细阅读该文档
+
 ## 安装
 ```
 # install degit
@@ -18,9 +20,6 @@ pnpm i
 pnpm docs:dev
 ```
 
-## 如何快速的开发一个组件
-
-
 ## scripts命令介绍
 - `pnpm build`: 对组件库进行打包。
 - `pnpm docs:dev`: 开启说明文档服务。
@@ -32,6 +31,15 @@ pnpm docs:dev
 - `pnpm comp:new [component name]`: 创建测试环境组件文件。
 - `pnpm docs:new [component name]`: 创建新的组件说明文档。
 - `pnpm component:create [component name]`: `pnpm comp:create`、`pnpm comp:new`、`pnpm docs:new`合并命令，推荐使用。
+
+## env配置介绍
+⚠在初次开发的时候需要对根目录的.env文件进行配置修改
+```
+# CSS预处理器 默认支持sass和less
+CSS_PREPROCESSOR = 'scss'
+# 用于添加组件命名前缀，建议采用首字母大写格式，最后生成的组件会采取类似这种格式:<vc-button></vc-button>
+COMPONENT_NAME = 'Vc'
+```
 
 
 ## 组件开发约定
