@@ -1,4 +1,4 @@
-import { createVitepressComp } from './create.js'
+import { createVitepressComp } from './create.ts'
 
 function create() {
   const commands = process.argv.splice(2)

@@ -1,5 +1,5 @@
 import fs from 'node:fs'
-import '../../config/env.js'
+import '../../config/env.ts'
 
 
 const pagesPath = './playground/vue-vite-playground/src/pages'
@@ -22,7 +22,7 @@ export function createTemplate() {
 `
 }
 
-export function createPage(commands) {
+export function createPage(commands: any[]) {
   const template = createTemplate()  
   for (let i = 0; i < commands.length; i++) {
     const path = `${pagesPath}/${commands[i]}`

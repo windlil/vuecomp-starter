@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 
-export function createVitepressComp(compName) {
+export function createVitepressComp(compName: string) {
 
   const dir = `./docs/guide/components/${compName}.md`
   const template = `---

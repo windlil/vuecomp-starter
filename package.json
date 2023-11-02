@@ -18,12 +18,12 @@
   },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
-    "component:create": "esno ./utils/create/index.js",
-    "comp:create": "node ./utils/createComponent/index.js",
+    "component:create": "esno ./utils/create/index.ts",
+    "comp:create": "node ./utils/createComponent/index.ts",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
-    "comp:new": "node ./utils/createTestVue/index.js",
+    "comp:new": "node ./utils/createTestVue/index.ts",
     "docs:dev": "vitepress dev docs --port 8000",
-    "docs:new": "node ./utils/createVitepressComp/index.js",
+    "docs:new": "node ./utils/createVitepressComp/index.ts",
     "docs:build": "vitepress build docs"
   },
   "files": [

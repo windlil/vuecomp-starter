@@ -1,4 +1,4 @@
-import { createComponent } from './create.js'
+import { createComponent } from './create.ts'
 
 const componentsPath = './packages/components/src'
 

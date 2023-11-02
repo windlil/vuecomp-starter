@@ -1,4 +1,4 @@
-import { createPage } from './createPage.js'
+import { createPage } from './createPage.ts'
 import chalk from 'chalk'
 
 function create() {

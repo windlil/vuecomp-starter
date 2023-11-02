@@ -1,7 +1,7 @@
 import chalk from 'chalk'
-import { createComponent } from '../createComponent/create.js'
-import { createPage } from '../createTestVue/createPage.js'
-import { createVitepressComp } from '../createVitepressComp/create.js'
+import { createComponent } from '../createComponent/create.ts'
+import { createPage } from '../createTestVue/createPage.ts'
+import { createVitepressComp } from '../createVitepressComp/create.ts'
 
 const componentsPath = './packages/components/src'
 

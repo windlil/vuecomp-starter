@@ -1,10 +1,10 @@
 import fs from 'node:fs'
-import { createIndexTemplate, createVueTemplate } from './template.js'
-import '../../config/env.js'
+import { createIndexTemplate, createVueTemplate } from './template.ts'
+import '../../config/env.ts'
 
 const cssPreprocessor = process.env.CSS_PREPROCESSOR ?? 'scss'
 
-export function createComponent(componentsPath, compName) {
+export function createComponent(componentsPath: string, compName: string) {
   const compRoot = `${componentsPath}/${compName}`
 
   if (!componentExist(compRoot)) {
@@ -43,7 +43,7 @@ export function createComponent(componentsPath, compName) {
   })
 }
 
-function createFile(dir, template) {
+function createFile(dir: string, template: string) {
   fs.writeFile(dir, template, (err) => {
     if (!err) {
       console.log(`${dir}文件创建成功`)
@@ -53,7 +53,7 @@ function createFile(dir, template) {
   })
 }
 
-export function componentExist(compRoot) {
+export function componentExist(compRoot: string) {
   if (fs.existsSync(compRoot)) {
     return false
   } else {
@@ -61,7 +61,7 @@ export function componentExist(compRoot) {
   }
 }
 
-function insertComponent(path, compName) {
+function insertComponent(path: string, compName: string) {
   const content = `\nexport * from './${compName}/index';`
   fs.writeFile(path, content,{ encoding: 'utf8', flag: 'a' }, err => {
     if (err) {

@@ -1,4 +1,4 @@
-export function createIndexTemplate(compName) {
+export function createIndexTemplate(compName: string) {
   const originName = compName
   compName = compName[0].toUpperCase() + compName.slice(1)
   const COMPONENT_NAME = process.env.COMPONENT_NAME ?? ''
@@ -15,7 +15,7 @@ export {
 export default ${name}`
 }
 
-export function createVueTemplate(compName) {
+export function createVueTemplate(compName: string) {
   compName = compName[0].toUpperCase() + compName.slice(1)
   const COMPONENT_NAME = process.env.COMPONENT_NAME ?? ''
   const name = `${COMPONENT_NAME}${compName}`
