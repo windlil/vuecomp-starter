@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "author": "windlil<windlil@outlook.com>",
   "description": "开源的组件库开发起始模板，帮助以最轻松的方式搭建功能完善的Vue3组件库，让使用者只需关注到组件的开发，无需关注繁琐的搭建配置。",
-  "keywords": ["components", "Vue3", "ui"],
+  "keywords": [
+    "components",
+    "Vue3",
+    "ui"
+  ],
   "type": "module",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.js",
@@ -14,7 +18,7 @@
   },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
-    "component:create": "node ./utils/create/index.js",
+    "component:create": "esno ./utils/create/index.js",
     "comp:create": "node ./utils/createComponent/index.js",
     "comp:play": "pnpm run -C playground/vue-vite-playground dev",
     "comp:new": "node ./utils/createTestVue/index.js",
@@ -34,6 +38,7 @@
     "@types/node": "^20.8.7",
     "chalk": "^5.3.0",
     "dotenv": "^16.3.1",
+    "esno": "^0.17.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
