@@ -83,3 +83,18 @@ sider_text="按钮 button"
 ---
 ```
 组件说明文档具体内容可参考示例组件。
+
+## 自动化部署
+具体文件在 `./.github/workflows/deploy.yaml`
+```
+示例：
+git tag docs@v0.0.1
+
+git add .
+
+git commit -m 'chore: update'
+
+git push
+
+git push origin docs@v0.0.1
+```
