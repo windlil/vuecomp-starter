@@ -113,6 +113,3 @@ git push
 
 git push origin docs@v0.0.1
 ```
-
-## 协议
-MIT
