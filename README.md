@@ -1,5 +1,7 @@
 # vuecomp-starter
 
+说明文档：https://windlil.github.io/vuecomp-starter/
+
 ## 介绍
 开源的 Vue3 + Typescript 组件库开发模板，简单轻松构建功能完善的组件库，按照约定的目录编排来进行开发，使开发者只需关注组件的开发以及说明文档的编写，无需关注其他繁琐的配置。
 
