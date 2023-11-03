@@ -113,3 +113,6 @@ git push
 
 git push origin docs@v0.0.1
 ```
+
+## License
+MIT
