@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as e}from"./chunks/framework.282b93a4.js";const _=JSON.parse('{"title":"开发攻略","description":"","frontmatter":{},"headers":[],"relativePath":"guide/go.md","filePath":"guide/go.md"}'),l={name:"guide/go.md"},p=e("",12),t=[p];function o(c,i,r,d,y,u){return n(),a("div",null,t)}const g=s(l,[["render",o]]);export{_ as __pageData,g as default};
