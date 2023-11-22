@@ -27,12 +27,20 @@ export default defineConfig({
           entryFileNames: '[name].js',
           preserveModules: true,
           preserveModulesRoot: 'src',
+        },
+        {
+          name: 'vuecomp',
+          exports: 'named',
+          format: 'umd',
+          dir: '../../dist/umd',
+          entryFileNames: '[name].js',
         }
       ]
     },
     lib: {
       entry: 'src/index.ts',
-      formats: ['es', 'cjs']
+      name: 'vuecomp',
+      formats: ['es', 'cjs', 'umd']
     },
   },
   plugins: [
