@@ -28,13 +28,13 @@ export default defineConfig({
           preserveModules: true,
           preserveModulesRoot: 'src',
         },
-        {
-          name: 'vuecomp',
-          exports: 'named',
-          format: 'umd',
-          dir: '../../dist/umd',
-          entryFileNames: '[name].js',
-        }
+        // {
+        //   name: 'vuecomp',
+        //   exports: 'named',
+        //   format: 'umd',
+        //   dir: '../../dist/umd',
+        //   entryFileNames: '[name].js',
+        // }
       ]
     },
     lib: {
