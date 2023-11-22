@@ -13,8 +13,7 @@
   "module": "dist/es/index.js",
   "types": "dist/lib/index.d.ts",
   "exports": {
-    "./styles/index.css": "./dist/styles/index.css",
-    "./styles/*.css": "./dist/styles/*.css"
+
   },
   "scripts": {
     "build": "gulp -f packages/script/build/index.ts",
