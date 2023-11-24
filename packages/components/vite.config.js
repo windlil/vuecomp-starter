@@ -28,6 +28,7 @@ export default defineConfig({
           preserveModules: true,
           preserveModulesRoot: 'src',
         },
+        // 开启umd打包模式
         // {
         //   name: 'vuecomp',
         //   exports: 'named',
